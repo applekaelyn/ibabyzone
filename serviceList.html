@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="full-screen" content="yes">
+		<meta name="x5-fullscreen" content="true">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="screen-orientation" content="portrait">
+		<meta name="x5-orientation" content="portrait">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="email=no" />
+		<title>ibabyzone</title>
+		<style type="text/css">
+			html,body{
+				height: 100%;
+			}
+		</style>
+		<script src="js/adaptive.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	</head>
+	<body>
+		<div class="serviceList fullPage">
+			<header class="header">
+				<div class="back" onClick="window.history.back(-1);"><span class="icon icon-back"></span></div>
+				<div class="title">服务列表</div>
+				<div class="menu"><span class="icon icon-menu"></span></div>
+			</header>
+			
+			<nav class="nav">
+				<div class="prov">
+					<p>省份</p>
+					<ul class="hide">
+						<li data-prov = "all">全部</li>
+						<li data-prov = "bj">北京</li>
+						<li data-prov = "gd">广东</li>
+					</ul>
+				</div>
+				<span class="borderLeft">|</span>
+				<div class="city">
+					<p>城市</p>
+					<ul class="hide">
+						<li data-prov = "all">全部</li>
+						<li data-prov = "AA">AA</li>
+						<li data-prov = "BB">BB</li>
+					</ul>
+				</div>
+				<span class="borderRight">|</span>
+				<div class="classification">
+					<p>分类</p>
+					<ul class="hide">
+						<li data-prov = "all">全部</li>
+						<li data-prov = "kindergarten">CC</li>
+						<li data-prov = "teachCenter">DD</li>
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="list">
+				<div class="list-item">
+					<div class="list-left">
+						<img src="img/photo1.png"/>
+					</div>
+					<div class="content">
+						<div class="content-top">
+							<p class="title">嘉定基础优早教（罗宾森）</p>
+							<span class="icon icon-star"></span>
+							<span class="address">上海-嘉定区</span><span class="type">早教中心</span>
+						</div>
+						<div class="content-bottom">
+							<div>
+								<img src="img/icon_coupon.png"></img>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="top hide">
+				<span class="icon icon-top"></span>
+			</div>
+			
+		</div>
+		
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/request.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/serviceList.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

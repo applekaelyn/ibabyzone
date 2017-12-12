@@ -1,0 +1,53 @@
+{
+	"datas": [
+		{
+			"photo": "img/photo1.png",
+			"name": "嘉定基础优早教（罗宾森）",
+			"address": "上海-嘉定区",
+			"type": "早教中心",
+			"preferential": [
+				"img/icon_coupon.png"
+			]
+		},
+		{
+			"photo": "img/photo2.png",
+			"name": "嘉定及心儿童社群|早教幼儿园",
+			"address": "上海-杨浦区",
+			"type": "幼儿园",
+			"preferential": [
+				"img/icon_discount.png",
+				"img/icon_reduce.png",
+				"img/icon_free.png"
+			]
+		},
+		{
+			"photo": "img/photo3.png",
+			"name": "家盒子（Family-Box）-西直门什么",
+			"address": "北京-西城区",
+			"type": "早教中心",
+			"preferential": [
+				"img/icon_reduce.png",
+				"img/icon_free.png"
+			]
+		},
+		{
+			"photo": "img/photo4.png",
+			"name": "科学宝贝早教中心",
+			"address": "上海-闵行区",
+			"type": "早教中心",
+			"preferential": [
+				"img/icon_coupon.png"
+			]
+		},
+		{
+			"photo": "img/photo5.png",
+			"name": "家宝贝儿童成长俱乐部",
+			"address": "北京-石景区",
+			"type": "早教中心",
+			"preferential": [
+				"img/icon_discount.png",
+				"img/icon_reduce.png"
+			]
+		}
+	]
+}

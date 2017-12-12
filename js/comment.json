@@ -1,0 +1,32 @@
+{
+	"datas": [
+		{
+			"profile": "img/icon_profile1.png",
+			"name": "爱洛公主",
+			"time": "1小时前",
+			"thumbUp": "56",
+			"comment": "从前有座山，山里有个庙，庙里有个老和尚，给小和尚讲故事。故事讲的是：从前有座山，山里有个庙，庙里有个老和尚，给小和尚讲故事。故事讲的是：从前有座山，山里有个庙"
+		},
+		{
+			"profile": "img/icon_profile2.png",
+			"name": "张**雯",
+			"time": "2017-10-11",
+			"thumbUp": "56",
+			"comment": "从前有座山，山里有个庙，庙里有个老和尚，给小和尚讲故事。"
+		},
+		{
+			"profile": "img/icon_profile1.png",
+			"name": "爱洛公主",
+			"time": "2017-10-09",
+			"thumbUp": "56",
+			"comment": "从前有座山，山里有个庙，庙里有个老和尚，给小和尚讲故事。故事讲的是：从前有座山，山里有个庙，庙里有个老和尚，给小和尚讲故事。"
+		},
+		{
+			"profile": "img/icon_profile2.png",
+			"name": "张**雯",
+			"time": "2017-09-18",
+			"thumbUp": "56",
+			"comment": "没有山"
+		}
+	]
+}

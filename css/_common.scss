@@ -1,0 +1,297 @@
+/*清除浮动类*/
+
+
+.clear {
+    clear: both;
+    *zoom: 1;
+}
+
+.cf:after {
+    font-size: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ''
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*显示类*/
+
+.hide,
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inlineblock,
+.inline-block {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+
+/*位置浮动类*/
+
+.float-left,
+.pull-left {
+    float: left;
+}
+
+.float-right,
+.pull-right {
+    float: right;
+}
+
+.vertical-middle {
+    vertical-align: middle;
+}
+
+.over-hide,
+.over-hidden {
+    overflow: hidden;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.scroll-auto,
+.scrollauto {
+    overflow: auto;
+}
+
+.scroll {
+    overflow: auto;
+}
+
+
+/*内联文本类*/
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify !important;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.text-nowrap,
+.nowrap {
+    white-space: nowrap;
+}
+
+.breakall,
+.break-all,
+.text-break {
+    word-break: break-all;
+}
+
+.text-bold,
+.font-bold {
+    font-weight: bold !important;
+}
+
+.text-lowercase,
+.lowercase {
+    text-transform: lowercase !important;
+}
+
+.text-uppercase,
+.uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
+.text-muted {
+    color: #636c72 !important;
+}
+
+.hover-transition {
+    transition: all 0.35s ease;
+}
+
+/*背景颜色类*/
+
+.bgfff {
+    background-color: #fff;
+}
+
+.bg000 {
+    background-color: #000;
+}
+
+
+
+/*透明*/
+
+.transparent {
+    opacity: 0;
+}
+
+/*位置类*/
+
+.pr,
+.relative {
+    position: relative;
+}
+
+.affix,
+.pfix,
+.fixed {
+    position: fixed;
+}
+
+.absolute,
+.pa {
+    position: absolute;
+}
+
+
+/*文字样式类*/
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-weight-normal {
+    font-weight: normal;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+//other
+.pointer {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: "PingHei", "STHeitiSC-Light", "tahoma", "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif", "microsoft yahei";
+}
+
+textarea,
+input {
+    outline: none;
+}
+input {
+    -webkit-appearance: none;
+}
+
+body {
+    background-color: #fff;
+}
+
+$ver: '?v=a1';
+
+@function REM($n){
+    @return $n / 37.5 * 1rem;
+}
+
+//font
+@mixin font-dpr($px){
+    font-size: round($px / 2) * 1px;
+    [data-dpr="2"] & {
+        font-size: $px * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        font-size: round($px * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        font-size: round($px * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        font-size: round($px / 2 * 3) * 1px
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        font-size: $px * 2px;
+    }
+}
+
+
+$URL:"../img/";//url路径前缀
+
+//浏览器前缀
+@mixin prefixer($property, $value, $prefixes: webkit moz) {
+  #{$property}: $value;
+
+  @each $prefix in $prefixes {
+    @if $prefix == webkit {
+      -webkit-#{$property}:#{$value};
+    }
+    @else if $prefix == moz {
+      -moz-#{$property}:#{$value};
+    }
+    @else if $prefix == o {
+      -o-#{$property}:#{$value};
+    }
+    @else if $prefix == ms {
+      -ms-#{$property}:#{$value};
+    }
+  }
+}
+
+//full bg
+@mixin fullBg($width,$height,$name){
+    width: $width;
+    height: $height;
+    margin: 0 auto;
+    background: url(#{$URL}#{$name}) 0 0 no-repeat;
+    @include prefixer(background-size,100% 100%);
+}
